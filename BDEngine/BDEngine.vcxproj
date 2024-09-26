@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BDCore\Log.h" />
     <ClInclude Include="src\BADEVEngineCAH.h" />
     <ClInclude Include="src\BDCore\Application.h" />
     <ClInclude Include="src\BDCore\Core.h" />
     <ClInclude Include="src\BDCore\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BDCore\Log.cpp" />
     <ClCompile Include="src\BDCore\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -25,6 +27,7 @@
     <ProjectGuid>{e52af3f8-4ba6-4f79-9d27-0c817a95e662}</ProjectGuid>
     <RootNamespace>BDEngine</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BDEngine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -66,6 +69,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BD_PLATFORM_WINDOWS;BD_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)BDEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,6 +84,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BD_PLATFORM_WINDOWS;BD_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)BDEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

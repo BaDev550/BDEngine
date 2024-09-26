@@ -1,0 +1,3 @@
+[submodule "BDEngine/vendor/spdlog"]
+	path = BDEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
